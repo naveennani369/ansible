@@ -3,10 +3,10 @@
   become: yes
   tasks:
   - name: install git on nodes
-    apt: 
+    apt:
      name: git
      state: present
-
+  
   - name: install tree on nodes
     apt:
      name: tree
@@ -14,5 +14,5 @@
 
   - name: install wget on nodes
     apt:
-     name: wget 
-     state: present 
+     name: wget
+     state: present
