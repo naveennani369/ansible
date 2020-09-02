@@ -3,9 +3,9 @@
   become: yes
   tasks:
   - name: i want to know host name
-    command: hostame -f
+    command:  hostname -f
     register: myresult
 
-  - name: display myresult value
-    debug: 
+  - name: display  myresult
+    debug:
       msg: "{{myresult}}"
