@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install jdk8 on ubuntu18 node1
+  - name: install jdk8 on ubuntu20 node1
     apt:
      name: openjdk-8-jre
      state: present
